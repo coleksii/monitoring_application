@@ -18,10 +18,21 @@ http://localhost:8080/monitoring-api/
 There are 3 endpoints:
 
 1. GET [/monitoring-api/users](http://localhost:8080/monitoring-api/users) to found all users
-2. GET [/monitoring-api/measurement](http://localhost:8080/api/monitoring/measurement?phoneNumber=312) <br>
+2. GET [/monitoring-api/measurement](http://localhost:8080/api/monitoring/measurement?phoneNumber=312) for getting measurement usage by user <br>
 phoneNumber is required parameter, you can get it from previous endpoint
-3. POST [/monitoring-api/measurement](http://localhost:8080/monitoring-api/measurement)
-You can check saved measurement with previous controller
+3. POST [/monitoring-api/measurement](http://localhost:8080/monitoring-api/measurement) for saving measurement<br>
+phoneNumber you can get from first endpoint<br>
+You can check saved measurement with previous controller<br>
+example body:
+```json
+{
+   "gas": 123,
+   "hotWater": 444,
+   "coldWater": 4124,
+   "phoneNumber": "312",
+   "comment": "Finnaly, I got new measurement!"
+}
+   ```
 
 You can find swagger documentation on [swagger](http://localhost:8080/monitoring-api/swagger-ui/#/monitoring-controller)
 
