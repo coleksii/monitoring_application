@@ -1,7 +1,6 @@
 package com.coleksii.monitoring.config;
 
 import org.hsqldb.server.Server;
-import org.hsqldb.server.ServerAcl.AclFormatException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
@@ -17,11 +16,9 @@ import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
-import java.io.IOException;
 import javax.sql.DataSource;
 
 @Configuration
-@Import(BeanValidatorPluginsConfiguration.class)
 public class Config {
 
   @Bean
