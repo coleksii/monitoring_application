@@ -23,7 +23,7 @@ phoneNumber is required parameter, you can get it from previous endpoint
 3. POST [/monitoring-api/measurement](http://localhost:8080/monitoring-api/measurement) for saving measurement<br>
 phoneNumber you can get from first endpoint<br>
 You can check saved measurement with previous controller<br>
-example body:
+Example body:
 ```json
 {
    "gas": 123,
@@ -59,7 +59,7 @@ For real database you should go with normal scripts, moreover if you have compli
 ## Profiles
 Now it is only for locally runing. So now active profile - local
 
-For usage on server you need change profile (in application.properties, or with env variables)
+For usage on server you need change profile and add new config for connecting to database (in application.properties/Config.java, or with env variables)
 
 ## To Do in future releases
 - make support save user<br>
